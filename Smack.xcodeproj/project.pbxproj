@@ -17,6 +17,7 @@
 		B62ECB9B1FAE1C9600C87E78 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECB9A1FAE1C9600C87E78 /* GradientView.swift */; };
 		B62ECB9E1FAF785D00C87E78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECB9D1FAF785D00C87E78 /* Constants.swift */; };
 		B62ECBA01FAF867A00C87E78 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */; };
+		B62ECBA31FAF8BDD00C87E78 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */; };
 		B6B0107BDA6DCFEF91B7457A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72640605986E83DD27EF6994 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		B62ECB9A1FAE1C9600C87E78 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B62ECB9D1FAF785D00C87E78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				B62ECB961FAE09DA00C87E78 /* ChatVC.swift */,
 				B62ECB981FAE09EB00C87E78 /* ChannelVC.swift */,
 				B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */,
+				B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				B62ECB991FAE09EB00C87E78 /* ChannelVC.swift in Sources */,
 				B62ECB971FAE09DA00C87E78 /* ChatVC.swift in Sources */,
+				B62ECBA31FAF8BDD00C87E78 /* CreateAccountVC.swift in Sources */,
 				B62ECBA01FAF867A00C87E78 /* LoginVC.swift in Sources */,
 				B62ECB9B1FAE1C9600C87E78 /* GradientView.swift in Sources */,
 				B62ECB7D1FADF4EE00C87E78 /* AppDelegate.swift in Sources */,
