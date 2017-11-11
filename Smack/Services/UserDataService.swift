@@ -20,6 +20,7 @@ class UserDataService {
     
     func setUserData(id: String, color: String, avatarName: String, email: String, name: String){
         self.id = id
+        self.email = email
         self.avatarColor = color
         self.avatarName = avatarName
         self.name = name
@@ -58,6 +59,17 @@ class UserDataService {
         let newUIColor = UIColor(red: rfloat, green: gfloat, blue: bfloat, alpha: afloat)
         
         return newUIColor
+    }
+    
+    func logoutUser() {
+        id = ""
+        avatarName = ""
+        avatarColor = ""
+        email = ""
+        name = ""
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
     }
     
 }

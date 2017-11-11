@@ -20,7 +20,15 @@ class ChannelVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     @IBAction func loginBtnPressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            //Show profile page
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
+        
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
     }
     
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {

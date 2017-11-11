@@ -24,6 +24,8 @@
 		B62ECB9E1FAF785D00C87E78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECB9D1FAF785D00C87E78 /* Constants.swift */; };
 		B62ECBA01FAF867A00C87E78 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */; };
 		B62ECBA31FAF8BDD00C87E78 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */; };
+		B69BA3AE1FB747DD0035F22E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3AC1FB747DD0035F22E /* ProfileVC.swift */; };
+		B69BA3AF1FB747DD0035F22E /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */; };
 		B6B0107BDA6DCFEF91B7457A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72640605986E83DD27EF6994 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		B62ECB9D1FAF785D00C87E78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		B69BA3AC1FB747DD0035F22E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		B62ECB7B1FADF4EE00C87E78 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				B69BA3B01FB747FD0035F22E /* XIBs */,
 				B6194A901FB0BA3700EDD57D /* Services */,
 				B62ECB9C1FAF784700C87E78 /* Utilities */,
 				B62ECB951FAE09B500C87E78 /* Model */,
@@ -146,6 +151,7 @@
 				B62ECB9F1FAF867A00C87E78 /* LoginVC.swift */,
 				B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */,
 				B62D98F01FB3318100591E76 /* AvatarPickerVC.swift */,
+				B69BA3AC1FB747DD0035F22E /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				B62ECB9D1FAF785D00C87E78 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B69BA3B01FB747FD0035F22E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69BA3AF1FB747DD0035F22E /* ProfileVC.xib in Resources */,
 				B62ECB871FADF4EE00C87E78 /* LaunchScreen.storyboard in Resources */,
 				B62ECB841FADF4EE00C87E78 /* Assets.xcassets in Resources */,
 				B62ECB821FADF4EE00C87E78 /* Main.storyboard in Resources */,
@@ -300,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69BA3AE1FB747DD0035F22E /* ProfileVC.swift in Sources */,
 				B62ECB991FAE09EB00C87E78 /* ChannelVC.swift in Sources */,
 				B62D98F11FB3318100591E76 /* AvatarPickerVC.swift in Sources */,
 				B6194A941FB2348200EDD57D /* RoundedButton.swift in Sources */,
