@@ -26,6 +26,8 @@
 		B62ECBA31FAF8BDD00C87E78 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */; };
 		B69BA3AE1FB747DD0035F22E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3AC1FB747DD0035F22E /* ProfileVC.swift */; };
 		B69BA3AF1FB747DD0035F22E /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */; };
+		B69BA3B21FB9AC600035F22E /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B11FB9AC600035F22E /* MessageService.swift */; };
+		B69BA3B41FB9ACA40035F22E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B31FB9ACA40035F22E /* Channel.swift */; };
 		B6B0107BDA6DCFEF91B7457A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72640605986E83DD27EF6994 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		B62ECBA21FAF8BDD00C87E78 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		B69BA3AC1FB747DD0035F22E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		B69BA3B11FB9AC600035F22E /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		B69BA3B31FB9ACA40035F22E /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			children = (
 				B6194A911FB0BA5000EDD57D /* AuthService.swift */,
 				B62D98EE1FB3213000591E76 /* UserDataService.swift */,
+				B69BA3B11FB9AC600035F22E /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 		B62ECB951FAE09B500C87E78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B69BA3B31FB9ACA40035F22E /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				B62ECB991FAE09EB00C87E78 /* ChannelVC.swift in Sources */,
 				B62D98F11FB3318100591E76 /* AvatarPickerVC.swift in Sources */,
 				B6194A941FB2348200EDD57D /* RoundedButton.swift in Sources */,
+				B69BA3B41FB9ACA40035F22E /* Channel.swift in Sources */,
 				B62ECB971FAE09DA00C87E78 /* ChatVC.swift in Sources */,
+				B69BA3B21FB9AC600035F22E /* MessageService.swift in Sources */,
 				B62D98EF1FB3213000591E76 /* UserDataService.swift in Sources */,
 				B62D98F51FB7202E00591E76 /* CircleImg.swift in Sources */,
 				B62ECBA31FAF8BDD00C87E78 /* CreateAccountVC.swift in Sources */,
