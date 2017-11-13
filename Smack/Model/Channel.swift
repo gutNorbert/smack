@@ -9,7 +9,7 @@
 import Foundation
 
 struct Channel: Decodable {
-    //SWIFT-4
+        //SWIFT-4
     /*public private(set) var _id: String! variables have to have the same name as the API
     public private(set) var name: String!
     public private(set) var description: String!

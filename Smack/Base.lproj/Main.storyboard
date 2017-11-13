@@ -131,7 +131,7 @@
                                 <rect key="frame" x="0.0" y="125" width="375" height="427"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3dg-Xl-ph7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="3dg-Xl-ph7" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3dg-Xl-ph7" id="15l-IB-aav">
@@ -151,6 +151,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="KAd-ua-OPZ" id="wui-b7-EWF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -176,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Dpr-X2-kxv" id="t0E-F4-wsv"/>
+                        <outlet property="tableView" destination="9Tc-yi-h6r" id="Nfl-1W-7gZ"/>
                         <outlet property="userImg" destination="yJF-1v-p4m" id="HjI-VI-Q4V"/>
                         <segue destination="1OA-e7-Ces" kind="show" identifier="toLogin" id="d0c-wq-54Z"/>
                     </connections>
