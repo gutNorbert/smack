@@ -32,6 +32,7 @@
 		B69BA3AF1FB747DD0035F22E /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */; };
 		B69BA3B21FB9AC600035F22E /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B11FB9AC600035F22E /* MessageService.swift */; };
 		B69BA3B41FB9ACA40035F22E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B31FB9ACA40035F22E /* Channel.swift */; };
+		B6A51ACD1FBE06B30047473C /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A51ACC1FBE06B30047473C /* KeyboardBoundView.swift */; };
 		B6B0107BDA6DCFEF91B7457A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72640605986E83DD27EF6994 /* Pods_Smack.framework */; };
 		B6F725F81FBD9F2600727F89 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F725F71FBD9F2600727F89 /* Message.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		B69BA3B11FB9AC600035F22E /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		B69BA3B31FB9ACA40035F22E /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		B6A51ACC1FBE06B30047473C /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		B6F725F71FBD9F2600727F89 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				B62D98F21FB3339700591E76 /* AvatarCell.swift */,
 				B62D98F41FB7202D00591E76 /* CircleImg.swift */,
 				B69371141FB9B6D100060F3C /* ChannelCell.swift */,
+				B6A51ACC1FBE06B30047473C /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A51ACD1FBE06B30047473C /* KeyboardBoundView.swift in Sources */,
 				B693711B1FBB8E8B00060F3C /* SocketService.swift in Sources */,
 				B69BA3AE1FB747DD0035F22E /* ProfileVC.swift in Sources */,
 				B69371151FB9B6D100060F3C /* ChannelCell.swift in Sources */,
