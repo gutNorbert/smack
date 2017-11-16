@@ -33,6 +33,7 @@
 		B69BA3B21FB9AC600035F22E /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B11FB9AC600035F22E /* MessageService.swift */; };
 		B69BA3B41FB9ACA40035F22E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BA3B31FB9ACA40035F22E /* Channel.swift */; };
 		B6B0107BDA6DCFEF91B7457A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72640605986E83DD27EF6994 /* Pods_Smack.framework */; };
+		B6F725F81FBD9F2600727F89 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F725F71FBD9F2600727F89 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		B69BA3AD1FB747DD0035F22E /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		B69BA3B11FB9AC600035F22E /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		B69BA3B31FB9ACA40035F22E /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		B6F725F71FBD9F2600727F89 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B69BA3B31FB9ACA40035F22E /* Channel.swift */,
+				B6F725F71FBD9F2600727F89 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				B62ECB991FAE09EB00C87E78 /* ChannelVC.swift in Sources */,
 				B62D98F11FB3318100591E76 /* AvatarPickerVC.swift in Sources */,
 				B6194A941FB2348200EDD57D /* RoundedButton.swift in Sources */,
+				B6F725F81FBD9F2600727F89 /* Message.swift in Sources */,
 				B69BA3B41FB9ACA40035F22E /* Channel.swift in Sources */,
 				B62ECB971FAE09DA00C87E78 /* ChatVC.swift in Sources */,
 				B69BA3B21FB9AC600035F22E /* MessageService.swift in Sources */,
