@@ -43,12 +43,23 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
         
-        SocketService.instance.getChatMessage { (success) in
-            if success {
+//        SocketService.instance.getChatMessage { (success) in
+//            if success {
+//                self.tableView.reloadData()
+//                if MessageService.instance.messages.count > 0 {
+//                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+//                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false) //scroll down to the latest message
+//                }
+//            }
+//        }
+        
+        SocketService.instance.getChatMessage { (newMessage) in
+            if newMessage.channelId == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
+                MessageService.instance.messages.append(newMessage)
                 self.tableView.reloadData()
                 if MessageService.instance.messages.count > 0 {
                     let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false) //scroll down to the latest message
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
                 }
             }
         }
@@ -129,7 +140,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         if AuthService.instance.isLoggedIn {
             guard let channelId = MessageService.instance.selectedChannel?.id else {return}
             guard let message = messageTextBox.text else {return}
-            
+
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId, completion: { (success) in
                 if success{
                     self.messageTextBox.text = ""
@@ -139,6 +150,8 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             })
         }
     }
+    
+    
     
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
