@@ -43,8 +43,6 @@ class MessageService {
                     NotificationCenter.default.post(name: NOTIF_CHANNELS_LOADED, object: nil)
                     completion(true)
                 }
-            
-        
         } else {
                 completion(false)
                 debugPrint(response.result.error as Any)

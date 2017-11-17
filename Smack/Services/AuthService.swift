@@ -124,7 +124,6 @@ class AuthService {
                 debugPrint(response.result.error as Any)
             }
         }
-        
     }
     
     func findUserByEmail(completion: @escaping CompletionHandler){
@@ -151,8 +150,5 @@ class AuthService {
         let name = json["name"].stringValue
         
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
-
     }
-    
-    
 }

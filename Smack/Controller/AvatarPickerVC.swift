@@ -75,5 +75,4 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
 }
